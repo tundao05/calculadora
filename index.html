@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora Online</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <h1 class="title-calculator">Calculadora</h1>
+      <p id="result"></p>
+      <table class="keyboard">
+        <tr>
+          <td><button class="btn-orange" onclick="clean()">AC</button></td>
+          <td><button class="btn-orange" onclick="back()">C</button></td>
+          <td><button class="btn-orange" onclick="insert('%')">%</button></td>
+          <td><button class="btn-orange" onclick="insert('/')">÷</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="insert('7')">7</button></td>
+          <td><button onclick="insert('8')">8</button></td>
+          <td><button onclick="insert('9')">9</button></td>
+          <td><button class="btn-orange" onclick="insert('*')">X</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="insert('4')">4</button></td>
+          <td><button onclick="insert('5')">5</button></td>
+          <td><button onclick="insert('6')">6</button></td>
+          <td><button class="btn-orange" onclick="insert('-')">-</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="insert('1')">1</button></td>
+          <td><button onclick="insert('2')">2</button></td>
+          <td><button onclick="insert('3')">3</button></td>
+          <td><button class="btn-orange" onclick="insert('+')">+</button></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button
+              style="width: 106px"
+              border-radius:
+              40%;
+              onclick="insert('0')"
+            >
+              0
+            </button>
+          </td>
+          <td><button onclick="insert('.')">,</button></td>
+          <td>
+            <button class="btn-orange-circle" onclick="calculate()">=</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
